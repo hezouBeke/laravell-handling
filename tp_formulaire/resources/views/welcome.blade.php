@@ -10,7 +10,8 @@
       </a>
       <div class="w-full p-6 bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md dark:bg-gray-800 dark:border-gray-700 sm:p-8">
           
-          <form   method="POST" class="mt-4 space-y-4 lg:mt-5 md:space-y-5" action="" >
+          <form  method="POST" class="mt-4 space-y-4 lg:mt-5 md:space-y-5" action= "{{route('etudiants.store')}}" >
+            @csrf
           <div>
                   <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Nom </label>
                   <input type="text" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder=" saisir votre nom " required="">
